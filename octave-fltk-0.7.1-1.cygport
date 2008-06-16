@@ -1,0 +1,13 @@
+inherit octave
+
+DESCRIPTION="Octave FLTK bindings"
+HOMEPAGE="http://octave-gtk.sourceforge.net/octave-fltk/"
+SRC_URI="mirror://sourceforge/octave-gtk/${P}.tar.gz"
+
+CYGCONF_ARGS="--disable-debug"
+MAKEOPTS+=" -j1"
+
+src_install() {
+	cd ${B}
+	cyginstall docdir=/usr/share/doc/${P} exdir=/usr/share/doc/${P}/examples
+}
