@@ -1,5 +1,5 @@
 category: Math X11
-requires: cygwin libfltk11 octave
+requires: libfltk11 octave
 sdesc: "Octave FLTK bindings"
 ldesc: "Octave-FLTK is a port of the GUI toolkit/library,
 for the GNU Octave numerical computation suite."
